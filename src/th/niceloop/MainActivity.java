@@ -16,8 +16,9 @@ public class MainActivity extends Activity {
 		 
 		
 		WebView myWebView = (WebView) findViewById(R.id.webview);
-		myWebView.loadUrl("http://demo.niceloop.com/Home/Login");
+		myWebView.loadUrl("http://demo.niceloop.com/home/Logindemo");
 		myWebView.setWebChromeClient(new WebChromeClient());
+		myWebView.setWebViewClient(new MyWebViewClient());
 		WebSettings webSettings = myWebView.getSettings();
 		webSettings.setJavaScriptEnabled(true);
 	}
